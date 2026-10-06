@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Somtoday Cijfer Onthuller",
+  "version": "1.0.0",
+  "description": "Verbergt cijfers op Somtoday achter een knop en onthult ze met een pack opening of casino reveal. Alles gebeurt lokaal in je browser.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.somtoday.nl/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
